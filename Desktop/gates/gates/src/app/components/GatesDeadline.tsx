@@ -5,7 +5,21 @@ const deadline = new Date("2025-07-01T00:00:00");
 
 function getTimeRemaining() {
   const now = new Date();
-  const total = deadline.getTime() - now.getTime();
+  const total = Date.UTC(
+    deadline.getUTCFullYear(),
+    deadline.getUTCMonth(),
+    deadline.getUTCDate(),
+    deadline.getUTCHours(),
+    deadline.getUTCMinutes(),
+    deadline.getUTCSeconds()
+  ) - Date.UTC(
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate(),
+    now.getUTCHours(),
+    now.getUTCMinutes(),
+    now.getUTCSeconds()
+  );
   const days = Math.floor(total / (1000 * 60 * 60 * 24));
   const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
   const minutes = Math.floor((total / (1000 * 60)) % 60);
