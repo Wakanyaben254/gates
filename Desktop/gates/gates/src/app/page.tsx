@@ -1,5 +1,5 @@
 "use client";
-import GatesDeadline from "./components/GatesDeadline";
+// import GatesDeadline from "./components/GatesDeadline";
 import GatesNavbar from "./components/GatesNavbar";
 import GatesHero from "./components/GatesHero";
 import GatesAbout from "./components/GatesAbout";
@@ -15,8 +15,7 @@ export default function Home() {
           <GatesAbout />
           <GatesImpact /> 
           <GatesAnimate />
-          {/* GatesDeadline component is added here */}
-          <GatesDeadline />
+           
         </main>
       </div>
     </>
