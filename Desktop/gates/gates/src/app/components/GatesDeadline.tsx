@@ -36,7 +36,6 @@ const GatesDeadline: React.FC = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-
   if (timeLeft.total <= 0) {
     return (
       <div className="bg-red-100 text-red-700 p-4 rounded-md text-center font-semibold">

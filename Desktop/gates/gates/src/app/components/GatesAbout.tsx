@@ -11,7 +11,7 @@ const GatesAbout: React.FC = () => {
         {/* About gates foundation Section */}
         <div className="mb-12">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-           About Us ,Kenya nairobi
+           About Us ,Kenya
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
             <span>The opening of our foundation’s Kenya office in 2024 marked a pivotal milestone in our work within the country and reflected our deepened commitment to supporting meaningful change across East Africa and the continent as a whole. Our expanded presence in the region has also strengthened our ability to collaborate with local communities, governments, and partners to achieve greater impact.</span>
