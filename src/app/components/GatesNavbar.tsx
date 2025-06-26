@@ -63,7 +63,7 @@ const GatesNavbar: React.FC = () => {
             </Link>
             <Link
               href="/donate"
-              className="bg-orange-500 hover:bg-orange-700 text-white font-medium py-2 px-4 rounded-md text-sm"
+              className="bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md text-sm"
             >
               Apply Now
             </Link>
@@ -122,7 +122,7 @@ const GatesNavbar: React.FC = () => {
           </Link>
           <Link
             href="/donate"
-            className="bg-orange-500 hover:bg-orange-700 text-white block py-2 px-4 rounded-md text-base font-medium text-center"
+            className="bg-green-500 hover:bg-green-700 text-white block py-2 px-4 rounded-md text-base font-medium text-center"
           >
             Apply Now
           </Link>
