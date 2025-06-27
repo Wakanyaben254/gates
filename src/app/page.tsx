@@ -1,10 +1,11 @@
 "use client";
-// import GatesDeadline from "./components/GatesDeadline";
+ import GatesDeadline from "./components/GatesDeadline";
 import GatesNavbar from "./components/GatesNavbar";
 import GatesHero from "./components/GatesHero";
 import GatesAbout from "./components/GatesAbout";
 import GatesImpact from "./components/GatesImpact"; 
 import GatesAnimate from "./components/GatesAnimate";
+import GatesFooter from "./components/GatesFooter"; 
 export default function Home() {
   return (
     <>
@@ -15,9 +16,13 @@ export default function Home() {
           <GatesAbout />
           <GatesImpact /> 
           <GatesAnimate />
+          <GatesDeadline />
+          
            
         </main>
+        <GatesFooter />
       </div>
+      
     </>
   );
 }

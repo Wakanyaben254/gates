@@ -1,4 +1,4 @@
-/*
+
 "use client";
 import React, { useEffect, useState } from "react";
 
@@ -46,7 +46,7 @@ const GatesDeadline: React.FC = () => {
   }
 
   return (
-    <div className="bg-yellow-100 text-yellow-800 p-4 rounded-md text-center font-semibold">
+    <div className="bg-green-100 text-yellow-800 p-4 rounded-md text-center font-semibold">
       <div>Application closes in:</div>
      <div className="mt-2 text-2xl tracking-wide">
         {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m : {timeLeft.seconds}s
@@ -56,4 +56,4 @@ const GatesDeadline: React.FC = () => {
 };
 
 export default GatesDeadline;
-*/
+

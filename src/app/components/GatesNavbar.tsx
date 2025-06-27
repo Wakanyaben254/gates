@@ -62,7 +62,7 @@ const GatesNavbar: React.FC = () => {
               Contact
             </Link>
             <Link
-              href="/donate"
+              href="/apply"
               className="bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md text-sm"
             >
               Apply Now
@@ -74,7 +74,7 @@ const GatesNavbar: React.FC = () => {
             <button
               onClick={toggleMobileMenu}
               type="button"
-              className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500"
+              className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
               aria-controls="mobile-menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -121,7 +121,7 @@ const GatesNavbar: React.FC = () => {
             Contact
           </Link>
           <Link
-            href="/donate"
+            href="/apply"
             className="bg-green-500 hover:bg-green-700 text-white block py-2 px-4 rounded-md text-base font-medium text-center"
           >
             Apply Now

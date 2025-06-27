@@ -62,7 +62,6 @@ const GatesImpact: React.FC = () => {
                   src={project.imageSrc}
                   alt={project.imageAlt}
                   fill
-                  objectFit="cover"
                   className="rounded-t-lg object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
                   quality={80}
                 />

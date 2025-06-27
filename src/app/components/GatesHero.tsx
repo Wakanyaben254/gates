@@ -21,12 +21,12 @@ const HeroSectionKenya: React.FC = () => {
             Join our mission to create lasting impact through community-driven initiatives. We support local groups in climate action, urban farming, education, and sustainable development.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link href="/apply-for-funding" passHref>
+            <Link href="/apply" >
               <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg shadow-md transition duration-300 ease-in-out">
-                Apply for Funding
+                Apply Funding
               </button>
             </Link>
-            <Link href="/learn-more" passHref>
+            <Link href="/learn" >
               <button className="bg-transparent border-2 border-green-600 hover:bg-green-600 hover:text-white text-green-600 font-bold py-3 px-8 rounded-lg text-lg shadow-md transition duration-300 ease-in-out">
                 Learn More
               </button>
