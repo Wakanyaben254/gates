@@ -29,7 +29,7 @@ const GatesLearn: React.FC = () => {
               <span className="text-green-600 block">Mandate</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how Caring Connect is transforming communities across Kenya through 
+              Discover how Gates Foundation is transforming communities across Kenya through 
               sustainable development, empowerment, and collaborative partnerships.
             </p>
           </div>
