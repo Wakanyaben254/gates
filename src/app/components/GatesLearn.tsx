@@ -38,7 +38,7 @@ const GatesLearn: React.FC = () => {
 
       {/* Mission & Vision */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 hover:scale-105  active:scale-105 focus:scale-105transition-transform duration-300 ease-in-out">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center mb-6">
@@ -54,7 +54,7 @@ const GatesLearn: React.FC = () => {
               </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:scale-105  active:scale-105 focus:scale-105transition-transform duration-300 ease-in-out">
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                   <Heart className="w-6 h-6 text-green-600" />
