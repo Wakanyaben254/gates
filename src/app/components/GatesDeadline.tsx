@@ -2,7 +2,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const deadline = new Date("2025-07-01T00:00:00");
+const deadline = new Date("2025-08-01T00:00:00");
 
 function getTimeRemaining() {
   const now = new Date();
