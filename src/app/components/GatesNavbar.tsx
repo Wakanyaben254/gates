@@ -36,20 +36,20 @@ const GatesNavbar: React.FC = () => {
             <Link
               href="#about"
               scroll={true}
-              className="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium"
             >
               About Us
             </Link>
             <Link
               href="#programs"
               scroll={true}
-              className="text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium"
             >
               Programs
             </Link>
             <Link
               href="/impact"
-              className="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium"
             >
               Our Impact
             </Link>
@@ -57,7 +57,7 @@ const GatesNavbar: React.FC = () => {
             <Link
               href="#contact"
               scroll={true}
-              className="text-gray-700 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-700 hover:text-green-500 px-3 py-2 rounded-md text-sm font-medium"
             >
               Contact
             </Link>
@@ -95,20 +95,20 @@ const GatesNavbar: React.FC = () => {
           <Link
             href="#about"
             scroll={true}
-            className="bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-orange-500"
+            className="bg-gray-100 text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-green-500"
           >
             About Us
           </Link>
           <Link
             href="#programs"
             scroll={true}
-            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-orange-500"
+            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-green-500"
           >
             Programs
           </Link>
           <Link
             href="/impact"
-            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-orange-500"
+            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-green-500"
           >
             Our Impact
           </Link>
@@ -116,7 +116,7 @@ const GatesNavbar: React.FC = () => {
           <Link
             href="#contact"
             scroll={true}
-            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-orange-500"
+            className="text-gray-700 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 hover:text-green-500"
           >
             Contact
           </Link>
