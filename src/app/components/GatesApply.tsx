@@ -2,6 +2,8 @@
 "use client";
 
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import { PhoneInput } from 'react-international-phone';
 import GatesDialog from './GatesDialog'; // Import the dialog component
 // Import the styles
@@ -176,7 +178,15 @@ const GatesApply: React.FC = () => {
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Apply for Support</h2>
          <p className="mt-1 text-sm text-gray-500 italic"> Due to high demand of the funding applicants are required to pay a refundable fee of Ksh 500 which will be refunded during the shortlisting and onset of the training</p>
-
+<div className="mb-8">
+            <Link
+              href="/"
+              className="inline-flex items-center text-green-600 hover:text-green-700 font-medium"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Link>
+          </div>
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Section 1: Personal Details */}
           <h3 className="text-xl font-semibold text-gray-800 border-b pb-2 mb-4">Personal Details</h3>
