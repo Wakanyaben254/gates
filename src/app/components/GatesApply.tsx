@@ -26,6 +26,15 @@ const nairobiGeography = {
 };
 
 const GatesApply: React.FC = () => {
+  const today = new Date();
+  const minAge = 17;
+  const maxDate = new Date(
+    today.getFullYear() - minAge,
+    today.getMonth(),
+    today.getDate()
+  )
+    .toISOString()
+    .split('T')[0];
   const [fullName, setFullName] = useState('');
   const [nationalId, setNationalId] = useState('');
   const [dob, setDob] = useState('');
@@ -229,6 +238,8 @@ const GatesApply: React.FC = () => {
                 onChange={(e) => setDob(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 required
+                max={maxDate}
+               
               />
             </div>
           </div>
