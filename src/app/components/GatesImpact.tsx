@@ -2,17 +2,29 @@
 import React from 'react';
 import Image from 'next/image'; // For optimized images
 import { ArrowRight } from 'lucide-react'; // For the arrow icon
+import Link from 'next/link'; // For navigation links
+interface ImpactProject {
+  id: number;
+  imageSrc: string;
+  imageAlt: string;
+  tag: string;
+  title: string;
+  description: string;
+  metric: string;
+  href: string; // Add href to the interface
+}
 
 const GatesImpact: React.FC = () => {
-  const impactProjects = [
+  const impactProjects : ImpactProject[] = [
     {
       id: 1,
-      imageSrc: "/agri.jpeg", // Placeholder: Replace with your actual image path
+      imageSrc: "/grp.jpg", // Placeholder: Replace with your actual image path
       imageAlt: "A serene river in a natural landscape",
-      tag: "Water & Sanitation",
-      title: "Water Access Project",
-      description: "Installing clean water systems and training communities in water management and conservation.",
-      metric: "80 water points built",
+      tag: "Youth Entrepreneurship",
+      title: "Youth Empowerment Program",
+      description: "Empowering youth through MSME/SME funding,vocational training ,startup funding and entrepreneurship support.",
+      metric: "500 youth trained",
+      href: "/youth", // Add href for navigation
     },
     {
       id: 2,
@@ -20,8 +32,9 @@ const GatesImpact: React.FC = () => {
       imageAlt: "A woman working on a machine in a workshop",
       tag: "Economic Empowerment",
       title: "Women's Cooperative Support",
-      description: "Strengthening women-led cooperatives through training, funding, and market linkage support.",
+      description: "Strengthening women-led cooperatives through training, funding,access to credit and market linkage support.",
       metric: "300 women empowered",
+      href: "/wom",
     },
     {
       id: 3,
@@ -31,6 +44,7 @@ const GatesImpact: React.FC = () => {
       title: "Digital Literacy Campaign",
       description: "Bridging the digital divide by providing technology access and training in underserved areas.",
       metric: "5,000 people trained",
+      href: "/digi",
     },
   ];
 
@@ -52,11 +66,18 @@ const GatesImpact: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {impactProjects.map((project) => (
-            <div
-              key={project.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300"
+
+             <Link 
+             key={project.id} 
+             href={project.href}
+             className="block no-underline text-inherit" // Make it a block, remove underline, inherit text color
+             role="link" // For accessibility, explicitly mark as a link
+             tabIndex={0} // Make it focusable for keyboard navigation
+             aria-label={`View details for ${project.title}`} // Provide a descriptive label
             >
-              {/* Card Image */}
+
+             <div  className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
+
               <div className="relative h-48 w-full">
                 <Image
                   src={project.imageSrc}
@@ -91,6 +112,8 @@ const GatesImpact: React.FC = () => {
                 </div>
               </div>
             </div>
+           
+          </Link>
           ))}
         </div>
       </div>
