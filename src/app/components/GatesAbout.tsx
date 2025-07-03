@@ -6,7 +6,7 @@ import { Target, Eye } from 'lucide-react'; // Icons for Mission and Vision
 
 const GatesAbout: React.FC = () => {
   return (
-    <section className="bg-[#F8FFF8] p-4 sm:p-6 md:p-10 lg:p-12 rounded-2xl shadow-xl mx-auto my-8 max-w-7xl">
+    <section id="about" className="bg-[#F8FFF8] p-4 sm:p-6 md:p-10 lg:p-12 rounded-2xl shadow-xl mx-auto my-8 max-w-7xl">
       <div className="max-w-4xl mx-auto">
         {/* About gates foundation Section */}
         <div className="mb-12">
