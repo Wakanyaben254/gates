@@ -11,15 +11,28 @@ import GatesDialog from './GatesDialog'; // Import the dialog component
 
 // Define data for dropdowns (simplified for example)
 const educationLevels = ['Primary', 'Secondary', 'University', 'Vocational'];
-const activities = ['Business support', 'Education support', 'Maternal Health care support', 'Economic Empowerment', 'Food security support'];
+const activities = ['Business Support', 'Education Support', 'Maternal Health Care Support', 'Economic Empowerment', 'Food Security Support'];
 
 // Nairobi geographical data (simplified example, in a real app this would be much larger or fetched from an API)
 const nairobiGeography = {
   Nairobi: {
+    'Dagoreti North': ["Kilimani", "Kawangware", "Gatina", "Kileleshwa", "Kabete"],
+    'Dagoreti South': ["Mutu-ini", "Ngando", "Riruta", "Uthiru/Ruthimitu", "Waithaka"],   
     'Kibra': ['Laini Saba', 'Lindi', 'Makina', 'Woodley/Kenyatta Golf Course', 'Sarangombe'],
+    'Kamkunji': ["Pumwani", "Eastleigh North", "Eastleigh South", "Airbase", "California"],
+    'Kasarani':  ["Clay City", "Mwiki", "Kasarani", "Njiru", "Ruai"],
+    'Langata':  ["Karen", "Nairobi West", "Mugumu-ini", "South C", "Nyayo Highrise"],
+    'Makadara': ["Maringo/Hamza", "Viwandani", "Harambee", "Makongeni"],
     'Mathare': ['Hospital', 'Mabatini', 'Huruma', 'Ngei', 'Mlango Kubwa', 'Kiamaiko'],
-    'Embakasi South':[ "Imara Daima", "Kwa Njenga", "Kwa Reuben", "Pipeline", "Kware"], 
-    'Starehe': ['Nairobi Central', 'Ngara', 'Pangani', 'Ziwani/Kariokor', 'Landimawe', 'Nairobi South']
+    'Embakasi East': ["Upper Savannah", "Lower Savannah", "Embakasi", "Utawala", "Mihango"],
+    'Embakasi West': ["Umoja I", "Umoja II", "Mowlem", "Kariobangi South"],
+    'Embakasi Central': ["Kayole North", "Kayole Central", "Kayole South", "Komarock", "Matopeni/Spring Valley"],
+    'Embakasi North': ["Kariobangi North", "Dandora Area I", "Dandora Area II", "Dandora Area III", "Dandora Area IV"],
+    'Embakasi South':[ "Imara Daima", "Kwa Njenga", "Kwa Reuben", "Pipeline", "Kware"],
+    'Roysambu': ["Githurai", "Kahawa West", "Zimmerman", "Roysambu", "Kahawa"],
+    'Ruaraka': ["Baba Dogo", "Utalii", "Mathare North", "Lucky Summer", "Korogocho"],
+    'Starehe': ['Nairobi Central', 'Ngara', 'Pangani', 'Ziwani/Kariokor', 'Landimawe', 'Nairobi South'],
+   'Westlands': ["Kitisuru", "Parklands/Highridge", "Karura", "Kangemi", "Mountain View"]
 
   },
   // ... other counties if you expand later
@@ -436,4 +449,5 @@ const GatesApply: React.FC = () => {
 };
 
 export default GatesApply;
+
 
