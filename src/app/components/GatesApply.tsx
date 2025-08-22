@@ -198,8 +198,8 @@ const GatesApply: React.FC = () => {
   return (
     <section className="py-12 md:py-20 bg-gray-50 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-xl">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Apply for Support</h2>
-         <p className="mt-1 text-sm text-gray-500 italic"> Due to high demand of the funding applicants are required to pay a refundable fee of Ksh 500 which will be refunded during the shortlisting and onset of the training</p>
+        <h2 className="text-3xl font-bold text-green-900 mb-8 text-center">Apply for Support</h2>
+         <p className="mt-1 text-sm text-gray-500 italic"> Due to high demand of the funding applicants are required to pay a refundable fee of Ksh 200 which will be refunded during the shortlisting and onset of the training</p>
 <div className="mb-8">
             <Link
               href="/"
@@ -449,5 +449,6 @@ const GatesApply: React.FC = () => {
 };
 
 export default GatesApply;
+
 
 
