@@ -11,7 +11,7 @@ import GatesDialog from './GatesDialog'; // Import the dialog component
 
 // Define data for dropdowns (simplified for example)
 const educationLevels = ['Primary', 'Secondary', 'University', 'Vocational'];
-const activities = ['business support', 'education support', 'maternal health care support', 'Economic Empowerment', 'food security support'];
+const activities = ['Business support', 'Education support', 'Maternal Health care support', 'Economic Empowerment', 'Food security support'];
 
 // Nairobi geographical data (simplified example, in a real app this would be much larger or fetched from an API)
 const nairobiGeography = {
@@ -436,3 +436,4 @@ const GatesApply: React.FC = () => {
 };
 
 export default GatesApply;
+
